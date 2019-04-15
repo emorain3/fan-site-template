@@ -1,0 +1,228 @@
+/* ========================== *
+*      Base Page Tamplate     *
+* =========================== */
+
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+:root {
+    --voltronblue: #3573da;
+    --voltronred: #d6322d;
+    --voltrongreen: #6dd741;
+    --voltronyellow: #ebc744;
+}
+body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Monoton', cursive;
+    word-spacing: .5rem;
+    text-align: center;
+    height: 100vh;
+    color: ivory;
+    background-color: ivory;
+    text-shadow: -1px 1px .05rem #333333;
+    font-size: 1.25rem;
+    text-decoration: none;
+    /* margin-top: 0; */
+}
+
+span {
+    color: black;
+    text-shadow: -1px 1px .15rem #333333;
+    font-size: 1.25rem;
+}
+
+h1 {
+    text-shadow: .15vh .15vh .5vh white, 
+                1vh 1vh 1vh black;
+}
+
+h2 {
+    color: rgb(0, 81, 255);
+    text-shadow: -0.15vh 0.15rem .05rem grey;
+}
+ a {
+    color: ivory;
+    text-shadow: -1px 1px .05rem #333333;
+    font-size: 1.25rem;
+    text-decoration: none;
+ }
+
+.page-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 125vh;
+}
+
+.banner {
+    /* border:  solid green; */
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    background-color: black;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.page-title {
+    /* border: solid orange; */
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 3vh;
+    padding-left: 10vw;
+
+}
+.page-title > h2 {
+    color: #505CC1;
+    text-shadow: none;
+}
+/* .footer {
+    width: 100vw;
+    height: 5vh;
+    background-color: #333333;
+} */
+
+
+
+/* ============================= *
+*            Home Page           *
+* ============================== */
+
+.home-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
+    /* align-items: end; */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.nav-column {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: inset -1px 1px 10px grey, 
+                0.15vh -0.5vh .05vh darkslategrey;
+                padding-bottom: 2vh;
+    transition: transform 300ms ease-in-out;
+}
+
+
+.nav-column:hover {
+    transform: translate(0vh, -25vh);
+}
+
+.home-title {
+    font-size: 2rem;
+}
+.blue-bar {
+    background-color: var(--voltronblue);
+}
+.green-bar {
+    background-color: var(--voltrongreen);
+}
+.yellow-bar {
+    background-color: var(--voltronyellow);
+}
+.red-bar {
+    background-color: var(--voltronred);
+}
+
+
+/* ============================= *
+*          Slideshow Page        *
+* ============================== */
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slide {
+    display: none;
+}
+
+#pic_displayed {
+    display: block;
+}
+
+button {
+    margin: 5vh;
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    box-shadow: inset -1px 1px 10px grey, 
+                0.15vh -0.15vh .05vh darkgrey;
+}
+
+img {
+    max-width: 700px;
+    max-height: 500px;
+    box-shadow: 1vh 1vh 1vh grey;
+}
+
+#logo {
+    /* border: solid salmon; */
+    box-shadow: none;
+    max-width: 400px;
+    max-height: 164px;
+    margin-right: 2vw;
+}
+
+
+
+
+/* ============================= *
+*           Summary Page         *
+* ============================== */
+
+.summary-container {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap:  20vh;
+    grid-column-gap: 10vh;
+}
+
+.trailer {
+    box-shadow: -1vh 1vh 1vh darkgrey;
+}
+
+p {
+    font-family: fantasy;
+    background-color: rgb(255, 255, 231);
+    color: darkslategrey;
+    text-shadow: none;
+    font-size: 1.15rem;
+    width: 70vh;
+    padding-top: 2vh;
+    box-shadow: -0.25vh 0.5vh .05vh darkgrey;
+}
+
+.details-list {
+    list-style-type: none;
+    text-align: left;
+    padding-top: 7vh;
+
+    font-family: fantasy;
+    background-color: rgb(255, 255, 231);
+    color: darkslategrey;
+    text-shadow: none;
+    font-size: 1.15rem;
+    width: 70vh;
+    box-shadow: -0.25vh 0.5vh .05vh darkgrey;
+
+}
